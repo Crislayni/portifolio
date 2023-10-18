@@ -57,14 +57,14 @@ header {
 .navbar li a {
     font-weight: bold;
     color: #ccc;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     transition: .9s;
     text-transform: uppercase;
 }
 
 .navbar li a:hover{
     color: #fff;
-    border-bottom: 5px solid var(--cor4);
+    border-bottom: 5px solid #fff;
     transition: .9s;
 }
 
