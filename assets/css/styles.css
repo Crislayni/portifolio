@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+
 /* VARIAVEIS */
 
 :root {
-    --cor1: #F4E2DE;
-    --cor2: #F29325;
+    --cor1: #E3E3E3;
+    --cor2: #191919;
     --cor3: #D94F04;
     --cor4: #007172;
     --cor5: #025259;
@@ -34,15 +39,25 @@ background-color: var(--cor1);}
 /* HEADER */
 
 header {
-    background-color: var(--cor5);
+    background-color: var(--cor2);
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    width: 300px;
+    margin: 10px 30px 
 }
 
 /* NAVBAR */
+
+.header nav {
+    display: flex;
+}
 
 .navbar{
     display: flex;
@@ -60,6 +75,7 @@ header {
     border-bottom: 1px solid transparent;
     transition: .9s;
     text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
 .navbar li a:hover{
@@ -67,6 +83,7 @@ header {
     border-bottom: 5px solid #fff;
     transition: .9s;
 }
+
 
 /* REDES SOCIAIS */
 .redes-sociais {
@@ -76,7 +93,7 @@ header {
 }
 .header i {
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-right: 15px;
     transition: .7s;
 }
@@ -84,9 +101,97 @@ header {
 .fa-instagram:hover {
     color: orange;
 }
-.fa-github:hover {
-    color: mediumaquamarine;
-}
+
 .fa-whatsapp:hover {
     color: greenyellow;
+}
+
+/* BANNER */
+
+.banner {
+    height: 500px;
+    background-color: #007172;
+}
+
+.banner img {
+    position: absolute;
+    width: 100%;
+    height: 495px;
+}
+
+.banner .conteudo {
+    text-align: center;
+}
+
+.banner .conteudo div h1{
+    z-index: 11;
+    font-size: 4rem;
+    padding: 100px 50px;
+}
+
+.banner .conteudo .btn {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.banner .conteudo .btn p{
+    z-index: 10;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 20px;
+    width: 250px;
+    font-weight: bold;
+
+    color: var(--cor1);
+    border-radius: 35px;
+    border: 2px solid var(--cor1);
+    transition: .7s;
+}
+
+.banner .conteudo .btn p:hover{
+    color: var(--cor2);
+    background-color: var(--cor1);
+}
+
+/* SOBRE MIM */
+
+.sobre-mim {
+    display: flex;
+    height: 600px;
+    /* background-color: #025259; */
+
+}
+
+.sobre-mim .text {
+    padding: 150px 60px 10px;
+    color: var(--cor2);
+}
+
+.sobre-mim .text h2,
+.sobre-mim .text h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.165);
+    text-align: center;
+}
+
+.sobre-mim .text h2 {
+    margin-bottom: 30px;
+}
+
+.sobre-mim .text h3 {
+    margin-bottom: 30px;
+}
+
+.sobre-mim .text p {
+    color: var(--cor2);
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.sobre-mim .imagem  img{
+    width: 40%;
 }
