@@ -157,10 +157,7 @@ header {
 /* SOBRE MIM */
 
 .sobre-mim {
-    display: flex;
     height: 600px;
-    /* background-color: #025259; */
-
 }
 
 .sobre-mim .text {
@@ -188,8 +185,9 @@ header {
 .sobre-mim .text p {
     color: var(--cor2);
     font-family: 'Poppins';
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: justify;
+    padding: 0 300px;
 }
 
 .sobre-mim .imagem  img{
