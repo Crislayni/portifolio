@@ -8,7 +8,7 @@
 :root {
     --cor1: #E3E3E3;
     --cor2: #191919;
-    --cor3: #D94F04;
+    --cor3: #470b46;
     --cor4: #007172;
     --cor5: #025259;
 
@@ -29,6 +29,10 @@ a {
 
 li {
     list-style: none;
+}
+
+strong {
+    font-weight: bold;
 }
 
 /* CORPO */
@@ -192,4 +196,36 @@ header {
 
 .sobre-mim .imagem  img{
     width: 40%;
+}
+
+/* VALORES */
+
+.valores {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.valores i {
+    margin-top: 200px;
+    font-size: 5rem;
+    color: var(--cor3);
+}
+
+.valores h2 {
+    font-family: 'Oswald';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.valores .card {
+    width: 500px;
+}
+
+.valores .card  p {
+    text-align: justify;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
 }
