@@ -38,7 +38,9 @@ strong {
 /* CORPO */
 
 body {
-background-color: var(--cor1);}
+    background-color: var(--cor1);
+    margin-bottom: 500px; /* LEMBRAR DE APAGAR */
+}
 
 /* HEADER */
 
@@ -160,10 +162,6 @@ header {
 
 /* SOBRE MIM */
 
-.sobre-mim {
-    height: 600px;
-}
-
 .sobre-mim .text {
     padding: 150px 60px 10px;
     color: var(--cor2);
@@ -222,6 +220,7 @@ header {
 
 .valores .card {
     width: 500px;
+    text-align: center;
 }
 
 .valores .card  p {
@@ -229,3 +228,30 @@ header {
     font-family: 'Poppins';
     font-size: 1.5rem;
 }
+
+/* PROJETOS */
+
+.projetos h2 {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 150px 0;
+}
+
+.projects {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.projects .card img {
+    width: 800px;
+}
+
+.projects .card {
+    border: 16px solid var(--cor3);
+}
+
+
