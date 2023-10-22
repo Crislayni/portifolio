@@ -25,6 +25,7 @@
 
 a {
     text-decoration: none;
+    color: var(--cor1);
 }
 
 li {
